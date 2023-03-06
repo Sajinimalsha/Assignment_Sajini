@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Assigment</title>
+
+    <style>
+          #id123{
+                border-radius: 50% 50%;margin-left: 170%;margin-top: 30%;
+              }
+          
+          #z{color: white;text-align: left; font-size: 120%; font-weight: bolder;}
+          #k{color: white; text-align: left; font-size:160%; padding-left: 8%;font-weight: bolder;}
+   
+
+          #c{text-align:center;font-size:50px ;color: white;}
+
+          #ru{text-align:left;}
+          
+          .navbar-item,.navbar-link {color: aliceblue !important;}
+    
+          #b{text-align: left;font-size: 30px; color:white;}
+
+          #navbarBasicExample{
+            background-color: black;
+          }
+
+          .navbar-link:hover,.navbar-item:hover{
+              background-color: grey !important;
+          }
+
+          .container-1 {
+                        display:flex;
+                        flex-direction:row;
+                        display:flex;
+                        flex-direction:row; 
+                        padding:0 5% 0 5% ;
+                        margin-top: 5%;
+          }
+          
+          @media (max-width: 900px){ .container-2{width:100% !important;padding-top: 10%;} .container-3{flex-direction:column-reverse !important ;} .container-1{flex-direction: column;} #k{text-align: center; padding:0%;} #bset{display: flex; flex-direction: row;} nav{padding: 0;}}
+          
+    </style>
+    
+    
+    </head>
+
+    <body style="background-color: black;">
+        <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: black;padding-right: 5%;">
+            <div class="navbar-brand">
+              
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item">
+                  Home
+                </a>
+          
+                <a class="navbar-item">
+                  Front-end skills
+                </a>
+          
+                <div class="navbar-end" >
+                  <a class="navbar-item">
+                    Back-end skills
+                  </a>
+          
+                  <div class="navbar-end" style="background-color: black;">
+                    <div class="navbar-end" >
+                      <a class="navbar-item">
+                        Portfolio
+                      </a>
+                      <div class="navbar-end" >
+                        <a class="navbar-item">
+                          Contact
+                        </a>
+                    
+                  </div>
+                </div>
+              </div>
+          </nav>
+        
+        <script src="https://use.fontawesome.com/cf547b47ba.js"></script>
+        <script>
+                         document.addEventListener('DOMContentLoaded', () => {
+
+                        // Get all "navbar-burger" elements
+                        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+                        // Add a click event on each of them
+                        $navbarBurgers.forEach( el => {
+                        el.addEventListener('click', () => {
+
+                            // Get the target from the "data-target" attribute
+                            const target = el.dataset.target;
+                            const $target = document.getElementById(target);
+
+                            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                            el.classList.toggle('is-active');
+                            $target.classList.toggle('is-active');
+
+                        });
+                        });
+
+                        });
+        </script>
+              
+        <div class="container-1 container-3">
+            <div class="container-2" style="width:50%;">
+              <figure class="image is-128x128">
+                <img class="is-rounded" id="id123" src="file:///C:/Users/Piyumi/OneDrive/Desktop/WhatsApp%20Image%202023-01-22%20at%2009.38.19.jpeg" >
+              </figure>
+            </div>
+            <div class="container-2" style="width:50%; display: flex; flex-direction: column;padding-left: 8%;">
+                <p style="text-align: center; font-size: 250%;font-weight: bolder;color: aliceblue;">SAJINI DISSANAYAKE</p>
+                <div><p class="mt-4" id="ru" style="text-align: center; font-size: 200%;font-weight: bolder; color: aliceblue;">Full Stack Developer</p>
+                <p class="mt-4" id="ru" style="text-align: center; color: aliceblue;">Do you need to create website?When creating websites,design from<br> design to implementation.I also ensure the perfect technical aspect,<br>so that everything runs exactly as it should.if you would be interested in <br>my portfolio of experience-write to me!</p> 
+                </div>
+                <div id="bset" class="py-5" style="display: flex; justify-content: center;">
+                    <button class="button is is-rounded is-dark"> Portfolio</button>
+                    <button class="button is is-rounded mx-4">Contact</button>
+                </div>
+            </div>
+        </div>
+
+        <p id="k" class="mt-6">WHAT CAN I DO</p>
+
+    <div class="container-1 container-3" >
+            <div class="container-2" style="width: 50%; padding-left: 5%; padding-right: 5%;">
+                <p id="z" class="my-4"><i class="fa-sharp fa-solid fa-pen pr-3"></i> UI/UX Design</p>
+                <p id="ru">Creates the user interface app,website or other interactive media.thier work includes collaborating with product managers and engineers to gather requiremnets from user before designing ideas that can be communicated using storyboards.</p>
+                <p class="my-4" id="z"><i class="fa-sharp fa-solid fa-pen pr-3"></i>Web Design</p>
+                <p id="ru"> Planing and creation of websites.This includes a number of separate skills that all fall under the umbrella of web design. </p>
+            </div>
+            
+            
+            <div class="container-2" style="width:50%;padding-left: 5%; padding-right: 5%;">
+                
+                <h2 style="color:white"><b>Html</b></h2>
+                <progress class="progress is-danger" value="75" max="100">75%</progress>
+                
+                <h2 style="color:white"><b>Css</b></h2>
+                <progress class="progress is-dark" value="55" max="100">85%</progress>
+
+                <h2 style="color:white"><b>Figma</b></h2>
+                <progress class="progress is-link"  value="85" max="100">90%</progress>
+
+                <h2 style="color:white"><b>Javascript</b></h2>
+                <progress class="progress is-light" value="87" max="100">70%</progress>
+
+                <h2 style="color:white"><b>Canva</b></h2>
+                <progress class="progress is-warning" value="78" max="100">65%</progress>
+
+                <h2 style="color:white"><b>Photoshop</b></h2>
+                <progress class="progress is-align-self-stretch" value="80" max="100">55%</progress>
+
+            </div>
+      
+    </div>
+
+    <p id="k" class="mt-6">WHAT CAN I DO</p>
+ 
+    <div class="container-1">
+        <div class="container-2" style="width: 50%; padding-left: 5%; padding-right: 5%;" >
+          
+          <h2 id="z" class="py-3"> <i class="fa-sharp fa-solid fa-pen pr-3"></i> PHP</h2>
+          <p id="ru">Responsible for writing server side web applicaation logic,php developers usually develop back end components,connect the application with the other(often third party)web services,and support the front-enf developers by intergrate thier work with the application.</p>
+          
+          <h2 id="z" class="py-3"> <i class="fa-sharp fa-solid fa-pen pr-3"></i> Web Design</h2>
+          <p id="ru"> Design logical and physical databases,reviews description of changes to database design to understand how changes affect how data is stored in terms of location,amount of spaces and access method. </p>
+        
+        </div> 
+       
+      
+        <div class="container-2" style="width:50%; padding-left: 5%; padding-right: 5%;">
+            
+            <h2 style="color:white;"><b>PHP</b></h2> 
+            <progress class="progress is-danger" value="75" max="100">75%</progress>
+            
+            <h2 style="color:white"><b>MYSQL</b></h2>
+            <progress class="progress is-dark" value="55" max="100">85%</progress>
+        
+        </div>
+    </div>
+    
+    <p class="mt-6" id="k">Portfolio</p>
+ 
+
+   <div class="container-1">
+
+        <div class="container-2" style="width: 33%;padding-left: 5%; padding-right: 5%;">
+            <p>Education</p>
+            <p>Eheliyagoda Central College</p>
+            <p>(2011-2019)</p>
+        <figure class="image is-128x128">
+            <img class="is-square" id="ka" src="file:///C:/Users/Piyumi/OneDrive/Desktop/hand-highlighting-information-technology-tags-female-light-blue-highlighter-words-tag-cloud-clear-glass-whiteboard-40549318.jpg" >
+        </figure>
+        </div>
+
+        <div class="container-2" style="width: 33%;padding-left: 5%; padding-right: 5%;">
+            <p>Education</p>
+            <p>Eheliyagoda Central College</p>
+            <p>(2011-2019)</p>
+            <figure class="image is-128x128">
+                <img class="is-square" id="ka" src="file:///C:/Users/Piyumi/OneDrive/Desktop/resume-magnifying-glass-apply-job-experience-document-a-magnifying-glass-over-the-word-resume-stock-photograph_csp14970195.webp" >
+            </figure>
+        </div>
+
+        <div class="container-2" style="width: 33%; text-align: center; color: azure;padding-left: 5%; padding-right: 5%;">
+            <p>Experience</p>
+            <p style="margin-top: 10%;">Sri Lanka Telecom</p>
+            <p>(2021-2022)</p>
+            <p style="margin-top: 10%;">Sri Lanka Telecom</p>
+            <p>(2021-2022)</p>
+        </div>
+    </div>
+
+    <div class="container-1" style="margin-top: 5%;">
+
+        <div class="container-2" style= "width: 33% ;padding-left: 5%; padding-right: 5%;">
+            <h2 style="color:white;font-size:30px"><b>CONTACT</b></h2>
+            <h1>+94701553093</h1>
+            <h1>Srilanka</h1>
+            <h1>sajidis@gmail.com</h1>
+        </div>
+        
+
+        <div class="container-2" style="width:33%;display: flex;flex-direction: column; padding-left: 5%; padding-right: 5%;">
+            <label class="label">Name</label>
+            <div class="control">
+                    <input class="input" type="text" placeholder="name" style=" width: 280px">
+            </div>
+            <label class="label">Email</label>
+            <div class="control">
+                <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com" style=" width: 280px">
+            </div>      
+        </div>
+    
+        <div class="container-2" style="width: 33%;padding-left: 5%; padding-right: 5%;">
+            <div>
+            <label class="label">Message</label>
+                <div class="control">
+                    <input type="textarea" style="height: 120px; width: 280px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   </body>
+</html>
